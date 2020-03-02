@@ -20,6 +20,7 @@ class App extends React.Component {
     this.addItem = this.addItem.bind(this)
     this.clearTodos = this.clearTodos.bind(this)
     this.deleteItem = this.deleteItem.bind(this)
+    this.updateItem = this.updateItem.bind(this)
   }
   handleInput(e) {
     this.setState({
@@ -58,6 +59,17 @@ class App extends React.Component {
       items: filteredItems,
     })
   }
+  updateItem(updatedValue,itemKey) {
+    const items = this.state.items;
+    items.map(item => {
+      if(item.key === itemKey){
+        item.text = updatedValue;
+      }
+    })
+    this.setState({
+      items: items,
+    })
+  }
   render() {
     return (
       <div className="App">
@@ -68,7 +80,7 @@ class App extends React.Component {
             <button id="clear-btn" type="button" onClick={this.clearTodos}>Clear</button>
           </form>
         </header>
-        <ListItems items={this.state.items} deleteItem={this.deleteItem}></ListItems>
+        <ListItems items={this.state.items} deleteItem={this.deleteItem} updateItem={this.updateItem}></ListItems>
       </div>
     );
   }

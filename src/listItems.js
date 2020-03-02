@@ -7,9 +7,8 @@ function ListItems(props) {
     const items = props.items;
     const listItems = items.map(item => {
         return <div className="list-item" key={item.key}>
-            <p> {item.text} 
-                <span>  <FontAwesomeIcon className="faicons" icon="trash" onClick={ () => props.deleteItem(item.key)} /> </span>
-            </p>
+            <input type="text" value={item.text} onChange={ (e) => {props.updateItem(e.target.value, item.key)} } />  
+            <span>  <FontAwesomeIcon className="faicons" icon="trash" onClick={ () => props.deleteItem(item.key)} /> </span>
         </div>
     })
     return (

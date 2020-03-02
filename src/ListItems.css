@@ -2,21 +2,26 @@
     color: aliceblue;
     border-bottom: 1px solid rgb(255, 205, 205);
 }
-.list-item p{
-    margin: 0;
-    padding: 20px 40px;
+.list-item input{
+    margin: 5px 20px;
+    padding: 10px 10px;
+    border: 0;
+    outline: 0;
+    background-color: rgb(216, 59, 31);
+    color: #fff;
+    font-size: large;
 }
 
-.list-item p span{
-    float: right;
+.list-item  span{
+    /* float: right; */
+    margin: auto 20px;
 }
 
 .faicons{
     cursor: pointer;
-    transition-duration: 0.25s;
+    transition-duration: 0.15s;
 }
 
 .faicons:hover{
-
-    box-shadow: 1px 1px 10px #fff;
+    box-shadow: 1px 1px 15px #fff;
 }
