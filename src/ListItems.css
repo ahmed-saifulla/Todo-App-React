@@ -1,0 +1,22 @@
+.list-item{
+    color: aliceblue;
+    border-bottom: 1px solid rgb(255, 205, 205);
+}
+.list-item p{
+    margin: 0;
+    padding: 20px 40px;
+}
+
+.list-item p span{
+    float: right;
+}
+
+.faicons{
+    cursor: pointer;
+    transition-duration: 0.25s;
+}
+
+.faicons:hover{
+
+    box-shadow: 1px 1px 10px #fff;
+}

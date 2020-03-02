@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+body{
+  background-color: tomato;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background-color: rgb(216, 59, 31);
+  min-height: 500px;
+  padding-bottom: 10px;
+  width: 400px;
+  margin: 50px auto;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#todo-input{
+  background-color: rgb(226, 178, 178);
+  border: 0;
+  width: 200px;
+  height: 50px;
+  padding: 0 15px;
+  margin: 20px 10px 20px 20px;
+  color: rgb(37, 36, 36);
+  font-size: 18px;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#add-btn:focus, #todo-input:focus, #clear-btn{
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+#add-btn, #clear-btn{
+  height: 50px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition-duration: 0.35s;
+  color: aliceblue;
+  margin: 0 4px;
+  border-radius: 10px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#add-btn{
+  width: 60px;
+  background-color: rgb(9, 156, 58);
+  border: 2px solid rgb(54, 236, 93);
+}
+
+#add-btn:hover{
+  background-color: rgb(54, 236, 93);
+}
+
+#clear-btn{
+  background-color: rgb(216, 59, 31);
+  border: 2px solid tomato;
+  transition-duration: 0.35s;
+}
+
+#clear-btn:hover{
+  background-color: tomato;
 }
