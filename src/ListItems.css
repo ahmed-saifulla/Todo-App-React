@@ -2,14 +2,20 @@
     color: aliceblue;
     border-bottom: 1px solid rgb(255, 205, 205);
 }
+
 .list-item input{
     margin: 5px 20px;
     padding: 10px 10px;
     border: 0;
     outline: 0;
-    background-color: rgb(216, 59, 31);
+    /* background-color: rgb(216, 59, 31); */
+    background-color: #5388f8;
     color: #fff;
     font-size: large;
+}
+.list-item:hover,.list-item:hover input {
+    background-color: #4c84fd;
+    cursor: pointer;
 }
 
 .list-item  span{
